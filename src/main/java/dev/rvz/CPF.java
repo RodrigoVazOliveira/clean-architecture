@@ -10,8 +10,12 @@ public class CPF {
     }
 
     private void isValidValueCPF(String value) {
-        if (value == null || value.matches("([0-9]{2}[\\.]?[0-9]{3}[\\.]?[0-9]{3}[\\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\\.]?[0-9]{3}[\\.]?[0-9]{3}[-]?[0-9]{2})")) {
+        if (value == null || !value.matches("^([0-9]{3}\\.?){3}-?[0-9]{2}$")) {
             throw new IllegalArgumentException("CPF inputed is invalid!");
         }
+    }
+
+    public String getValue() {
+        return value;
     }
 }
