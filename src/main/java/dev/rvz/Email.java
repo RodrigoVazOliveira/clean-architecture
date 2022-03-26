@@ -11,9 +11,12 @@ public class Email {
     }
 
     private void validationAddressMail(String address) {
-        if (address == null ||
-                address.matches("/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/")) {
+        if (address == null || !address.matches("^(.+)@(.+)$")) {
             throw new IllegalArgumentException("Address e-mail invalid!");
         }
+    }
+
+    public String getAddress() {
+        return address;
     }
 }
