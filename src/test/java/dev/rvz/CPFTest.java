@@ -3,27 +3,26 @@ package dev.rvz;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class EmailTest {
+class CPFTest {
 
     @Test
-    void notCreateEmailInvalid() {
+    void notValidCPFValue() {
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
-            new Email(null);
+            new CPF(null);
         });
 
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
-            new Email("");
+            new CPF("");
         });
 
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
-            new Email("emailinvalido");
+            new CPF("00.000.000-00");
         });
     }
 
     @Test
-    void createdWithEmailValid() {
-        Email email = new Email("email@gmail.com");
-
-        Assertions.assertEquals("email@gmail.com", email.getAddress());
+    void createdWithCPFValid() {
+        CPF cpf = new CPF("519.792.040-80");
+        Assertions.assertTrue(cpf.getValue().equals("519.792.040-80"));
     }
 }
