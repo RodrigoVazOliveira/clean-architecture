@@ -11,4 +11,12 @@ public class Contact {
         this.email = email;
         this.telephones = telephones;
     }
+
+    public Email getEmail() {
+        return email;
+    }
+
+    public List<Telephone> getTelephones() {
+        return telephones;
+    }
 }
