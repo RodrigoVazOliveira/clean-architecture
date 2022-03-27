@@ -1,6 +1,5 @@
-package dev.rvz.studant;
+package dev.rvz.escola.domain.studant;
 
-import dev.rvz.escola.domain.indication.studant.CPF;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

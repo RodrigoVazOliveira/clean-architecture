@@ -1,4 +1,4 @@
-package dev.rvz.escola.domain.indication.studant;
+package dev.rvz.escola.domain.studant;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ public class Studant {
     private final String name;
     private final Contact contact;
 
-    public Studant(dev.rvz.escola.domain.indication.studant.CPF CPF, String name, Contact contact) {
+    public Studant(dev.rvz.escola.domain.studant.CPF CPF, String name, Contact contact) {
         this.CPF = CPF;
         this.name = name;
         this.contact = contact;
@@ -23,7 +23,7 @@ public class Studant {
         return contact;
     }
 
-    public dev.rvz.escola.domain.indication.studant.CPF getCPF() {
+    public dev.rvz.escola.domain.studant.CPF getCPF() {
         return CPF;
     }
 }

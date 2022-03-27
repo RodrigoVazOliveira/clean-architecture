@@ -1,6 +1,6 @@
-package dev.rvz.indication;
+package dev.rvz.escola.domain.indication;
 
-import dev.rvz.studant.Studant;
+import dev.rvz.escola.domain.studant.Studant;
 
 import java.time.LocalDateTime;
 

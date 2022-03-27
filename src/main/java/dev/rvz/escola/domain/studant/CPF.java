@@ -1,4 +1,4 @@
-package dev.rvz.escola.domain.indication.studant;
+package dev.rvz.escola.domain.studant;
 
 public class CPF {
 
