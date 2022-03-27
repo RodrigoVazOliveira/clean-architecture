@@ -1,5 +1,6 @@
 package dev.rvz.studant;
 
+import dev.rvz.escola.domain.indication.studant.Telephone;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

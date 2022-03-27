@@ -1,4 +1,4 @@
-package dev.rvz.studant;
+package dev.rvz.escola.domain.indication.studant;
 
 public class Telephone {
     private final String ddd;

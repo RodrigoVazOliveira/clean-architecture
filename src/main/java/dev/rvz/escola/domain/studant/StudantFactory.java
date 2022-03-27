@@ -1,4 +1,4 @@
-package dev.rvz.studant;
+package dev.rvz.escola.domain.indication.studant;
 
 import java.util.ArrayList;
 
