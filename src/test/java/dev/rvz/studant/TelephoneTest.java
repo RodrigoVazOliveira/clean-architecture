@@ -1,6 +1,5 @@
-package dev.rvz;
+package dev.rvz.studant;
 
-import dev.rvz.studant.Telephone;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

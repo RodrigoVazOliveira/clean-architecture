@@ -1,4 +1,4 @@
-package dev.rvz;
+package dev.rvz.studant;
 
 import dev.rvz.studant.Contact;
 import dev.rvz.studant.Email;
