@@ -1,4 +1,6 @@
-package dev.rvz;
+package dev.rvz.indication;
+
+import dev.rvz.studant.Studant;
 
 import java.time.LocalDateTime;
 

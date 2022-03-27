@@ -1,5 +1,6 @@
 package dev.rvz;
 
+import dev.rvz.studant.Email;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package dev.rvz;
+package dev.rvz.studant;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ public class Studant {
     private final String name;
     private final Contact contact;
 
-    public Studant(dev.rvz.CPF CPF, String name, Contact contact) {
+    public Studant(dev.rvz.studant.CPF CPF, String name, Contact contact) {
         this.CPF = CPF;
         this.name = name;
         this.contact = contact;

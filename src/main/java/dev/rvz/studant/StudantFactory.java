@@ -1,4 +1,4 @@
-package dev.rvz;
+package dev.rvz.studant;
 
 import java.util.ArrayList;
 
@@ -16,7 +16,7 @@ public class StudantFactory {
         return this;
     }
 
-    public StudantFactory withTelephone(Stirng ddd, String number) {
+    public StudantFactory withTelephone(String ddd, String number) {
         studantIsNull();
         this.studant.addTelephone(ddd, number);
         return this;

@@ -1,4 +1,4 @@
-package dev.rvz;
+package dev.rvz.studant;
 
 import java.util.List;
 
