@@ -2,16 +2,19 @@ package dev.rvz.escola.domain.studant;
 
 import java.util.List;
 
+
 public class Studant {
 
-    private final CPF CPF;
+    private final CPF cpf;
     private final String name;
     private final Contact contact;
+    private final String password;
 
-    public Studant(dev.rvz.escola.domain.studant.CPF CPF, String name, Contact contact) {
-        this.CPF = CPF;
+    public Studant(CPF cpf, String name, Contact contact, String password) {
+        this.cpf = cpf;
         this.name = name;
         this.contact = contact;
+        this.password = password;
     }
 
     public void addTelephone(String ddd, String number) {
@@ -23,7 +26,11 @@ public class Studant {
         return contact;
     }
 
-    public dev.rvz.escola.domain.studant.CPF getCPF() {
-        return CPF;
+    public CPF getCpf() {
+        return cpf;
+    }
+
+    public String getName() {
+        return name;
     }
 }

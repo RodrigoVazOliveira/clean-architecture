@@ -50,7 +50,7 @@ class StudantTest {
         Studant studant = new Studant(cpf, "fulano", contact);
         studant.addTelephone("034", "91234-4321");
 
-        Assertions.assertTrue(cpf.getValue().equals(studant.getCPF().getValue()));
+        Assertions.assertTrue(cpf.getValue().equals(studant.getCpf().getValue()));
         Assertions.assertTrue(email.getAddress().equals(studant.getContact().getEmail().getAddress()));
         Assertions.assertTrue("034".equals(studant.getContact().getTelephones().get(0).getDdd()));
         Assertions.assertTrue("91234-4321".equals(studant.getContact().getTelephones().get(0).getNumber()));
