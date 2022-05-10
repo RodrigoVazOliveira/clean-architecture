@@ -1,11 +1,12 @@
-package dev.rvz.escola.domain.studant;
+package dev.rvz.escola.infra.studant;
 
-import javax.xml.bind.DatatypeConverter;
+import dev.rvz.escola.domain.studant.CipherPassword;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class CipherPasswordWithMD5 implements CipherPassword {
-    
+
     @Override
     public String cryptPassword(String password) {
         try {

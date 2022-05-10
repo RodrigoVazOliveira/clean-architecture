@@ -26,6 +26,7 @@ public class StudantRepositoryJDBC implements StudantRepository {
             preparedStatement.setString(1, studant.getName());
             preparedStatement.setString(2, studant.getCpf().getValue());
             preparedStatement.setString(3, contact.getEmail().getAddress());
+
             preparedStatement.execute();
 
             insertTelephones(contact);
@@ -57,8 +58,9 @@ public class StudantRepositoryJDBC implements StudantRepository {
             Email email = new Email(resultSet.getString("email"));
             String name = resultSet.getString("name");
             Contact contact = new Contact(email, new ArrayList<>());
-
-            return new Studant(cpf, name, contact);
+            String password = resultSet.getString("password");
+            
+            return new Studant(cpf, name, contact, password);
         } catch (SQLException e) {
             e.printStackTrace();
             return null;

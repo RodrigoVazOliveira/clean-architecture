@@ -8,15 +8,16 @@
         <id name="cpf">
         </id>
 
-        <property name="name" type="string" />
+        <property name="name" type="string"/>
 
         <component name="cpf">
-            <property name="value" type="string" length="20" />
+            <property name="value" type="string" length="20"/>
         </component>
 
         <component name="contact">
 
         </component>
 
+        <property name="password" length="70" not-null="true"/>
     </class>
 </hibernate-mapping>

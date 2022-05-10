@@ -10,21 +10,21 @@ class StudantTest {
     @Test
     void createCPFInvalid() {
         Assertions
-                .assertThrows(IllegalArgumentException.class, () -> new Studant(new CPF(null), "fulano", new Contact(new Email("fulano@gmail.com"), new ArrayList<>())));
+                .assertThrows(IllegalArgumentException.class, () -> new Studant(new CPF(null), "fulano", new Contact(new Email("fulano@gmail.com"), new ArrayList<>()), "23423"));
         Assertions
-                .assertThrows(IllegalArgumentException.class, () -> new Studant(new CPF(""), "fulano", new Contact(new Email("fulano@gmail.com"), new ArrayList<>())));
+                .assertThrows(IllegalArgumentException.class, () -> new Studant(new CPF(""), "fulano", new Contact(new Email("fulano@gmail.com"), new ArrayList<>()), "23423"));
         Assertions
-                .assertThrows(IllegalArgumentException.class, () -> new Studant(new CPF("000"), "fulano", new Contact(new Email("fulano@gmail.com"), new ArrayList<>())));
+                .assertThrows(IllegalArgumentException.class, () -> new Studant(new CPF("000"), "fulano", new Contact(new Email("fulano@gmail.com"), new ArrayList<>()), "23423"));
     }
 
     @Test
     void createEmailInvalid() {
         Assertions
-                .assertThrows(IllegalArgumentException.class, () -> new Studant(new CPF("000.000.000-00"), "fulano", new Contact(new Email(null), new ArrayList<>())));
+                .assertThrows(IllegalArgumentException.class, () -> new Studant(new CPF("000.000.000-00"), "fulano", new Contact(new Email(null), new ArrayList<>()), ""));
         Assertions
-                .assertThrows(IllegalArgumentException.class, () -> new Studant(new CPF("000.000.000-00"), "fulano", new Contact(new Email(""), new ArrayList<>())));
+                .assertThrows(IllegalArgumentException.class, () -> new Studant(new CPF("000.000.000-00"), "fulano", new Contact(new Email(""), new ArrayList<>()), "23423"));
         Assertions
-                .assertThrows(IllegalArgumentException.class, () -> new Studant(new CPF("000.000.000-00"), "fulano", new Contact(new Email("fulanail.com"), new ArrayList<>())));
+                .assertThrows(IllegalArgumentException.class, () -> new Studant(new CPF("000.000.000-00"), "fulano", new Contact(new Email("fulanail.com"), new ArrayList<>()), "23423"));
     }
 
     @Test
@@ -32,7 +32,7 @@ class StudantTest {
         CPF cpf = new CPF("000.000.000-00");
         Email email = new Email("fulano@gmail.com");
         Contact contact = new Contact(email, new ArrayList<>());
-        Studant studant = new Studant(cpf, "fulano", contact);
+        Studant studant = new Studant(cpf, "fulano", contact, "23423");
 
         Assertions.assertThrows(IllegalArgumentException.class, () -> studant.addTelephone(null, null));
         Assertions.assertThrows(IllegalArgumentException.class, () -> studant.addTelephone("", null));
@@ -47,7 +47,7 @@ class StudantTest {
         CPF cpf = new CPF("000.000.000-00");
         Email email = new Email("fulano@gmail.com");
         Contact contact = new Contact(email, new ArrayList<>());
-        Studant studant = new Studant(cpf, "fulano", contact);
+        Studant studant = new Studant(cpf, "fulano", contact, "23423");
         studant.addTelephone("034", "91234-4321");
 
         Assertions.assertTrue(cpf.getValue().equals(studant.getCpf().getValue()));

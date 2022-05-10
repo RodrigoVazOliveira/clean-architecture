@@ -6,12 +6,12 @@ public class StudantFactory {
 
     private Studant studant;
 
-    public StudantFactory createStudanteWithNameAndCPFAndEmail(String name, String CPF, String addressEmail) {
+    public StudantFactory createStudanteWithNameAndCPFAndEmail(String name, String CPF, String addressEmail, String password) {
         CPF cpf = new CPF(CPF);
         Email email = new Email(addressEmail);
         Contact contact = new Contact(email, new ArrayList<>());
 
-        this.studant = new Studant(cpf, name, contact);
+        this.studant = new Studant(cpf, name, contact, password);
 
         return this;
     }
@@ -24,7 +24,7 @@ public class StudantFactory {
 
     private void studantIsNull() {
         if (this.studant == null) {
-            throw new NullPointerException("Not created Studant!");
+            throw new NullPointerException("Not created student!");
         }
     }
 
