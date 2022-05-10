@@ -10,12 +10,12 @@ import java.util.Properties;
 
 public class SendEmailIndicationWithJavaMail implements SendMailIndication {
     @Override
-    public void sendTo(Studant StudantIndication) throws MessagingException {
+    public void sendTo(Studant StudentIndication) throws MessagingException {
         Properties properties = setPropertiesSendEmail();
         Session session = getSession(properties);
 
         MimeMessage message = new MimeMessage(session);
-        message.setFrom(new InternetAddress("emailrementente@servidor.com"));
+        message.setFrom(new InternetAddress(StudentIndication.getContact().getEmail().getAddress()));
         Address[] toUser = InternetAddress.parse("emaildestinatario@servidor.com");
         message.setRecipients(Message.RecipientType.TO, toUser);
         message.setSubject("Assunto");
