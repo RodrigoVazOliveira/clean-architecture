@@ -10,7 +10,7 @@ public class StudentMatriculated implements Event {
 
     public StudentMatriculated(CPF cpf) {
         this.cpf = cpf;
-        this.moment =  = LocalDateTime.now();
+        this.moment = LocalDateTime.now();
     }
 
     @Override
