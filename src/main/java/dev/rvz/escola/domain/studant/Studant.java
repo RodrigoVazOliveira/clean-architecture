@@ -19,6 +19,10 @@ public class Studant {
 
     public void addTelephone(String ddd, String number) {
         List<Telephone> telephones = this.contact.getTelephones();
+        if (telephones.size() == 2) {
+            throw new IllegalArgumentException("Numero maximo de telefone ja atingido!");
+        }
+
         telephones.add(new Telephone(ddd, number));
     }
 
