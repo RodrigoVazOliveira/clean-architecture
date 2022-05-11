@@ -4,6 +4,7 @@ import dev.rvz.escola.domain.studant.CipherPassword;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Base64;
 
 public class CipherPasswordWithMD5 implements CipherPassword {
 
@@ -13,8 +14,7 @@ public class CipherPasswordWithMD5 implements CipherPassword {
             MessageDigest md = MessageDigest.getInstance("MD5");
             md.update(password.getBytes());
             byte[] digest = md.digest();
-            String myHash = DatatypeConverter
-                    .printHexBinary(digest).toUpperCase();
+            String myHash = Base64.getEncoder().encode(digest).toString();
 
             return myHash;
         } catch (NoSuchAlgorithmException e) {
