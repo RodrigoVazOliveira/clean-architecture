@@ -1,8 +1,8 @@
 package dev.rvz.escola.academic.domain.student;
 
-import dev.rvz.escola.academic.domain.Event;
-import dev.rvz.escola.academic.domain.Listenner;
 import dev.rvz.escola.shared.domain.CPF;
+import dev.rvz.escola.shared.domain.events.Event;
+import dev.rvz.escola.shared.domain.events.Listenner;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

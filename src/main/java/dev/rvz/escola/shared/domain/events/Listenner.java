@@ -1,4 +1,4 @@
-package dev.rvz.escola.academic.domain;
+package dev.rvz.escola.shared.domain.events;
 
 public abstract class Listenner {
     public void process(Event event) {

@@ -1,9 +1,9 @@
 package dev.rvz.escola.academic.application.matriculate;
 
-import dev.rvz.escola.academic.domain.PublishEvents;
 import dev.rvz.escola.academic.domain.student.Studant;
 import dev.rvz.escola.academic.domain.student.StudantRepository;
 import dev.rvz.escola.academic.domain.student.StudentMatriculated;
+import dev.rvz.escola.shared.domain.events.PublishEvents;
 
 public class MatriculateService {
 

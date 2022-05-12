@@ -2,10 +2,10 @@ package dev.rvz.escola.academic;
 
 import dev.rvz.escola.academic.application.matriculate.MatriculateDTO;
 import dev.rvz.escola.academic.application.matriculate.MatriculateService;
-import dev.rvz.escola.academic.domain.PublishEvents;
 import dev.rvz.escola.academic.domain.student.LogStudentMatriculated;
 import dev.rvz.escola.academic.domain.student.StudantRepository;
 import dev.rvz.escola.academic.infra.studant.StudantRepositoryJDBC;
+import dev.rvz.escola.shared.domain.events.PublishEvents;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

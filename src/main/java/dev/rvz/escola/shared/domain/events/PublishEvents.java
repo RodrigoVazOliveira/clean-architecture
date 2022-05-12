@@ -1,4 +1,4 @@
-package dev.rvz.escola.academic.domain;
+package dev.rvz.escola.shared.domain.events;
 
 import java.util.ArrayList;
 import java.util.List;
