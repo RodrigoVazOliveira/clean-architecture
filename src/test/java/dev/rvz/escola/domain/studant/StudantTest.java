@@ -1,5 +1,9 @@
 package dev.rvz.escola.domain.studant;
 
+import dev.rvz.escola.academic.domain.student.CPF;
+import dev.rvz.escola.academic.domain.student.Contact;
+import dev.rvz.escola.academic.domain.student.Email;
+import dev.rvz.escola.academic.domain.student.Studant;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

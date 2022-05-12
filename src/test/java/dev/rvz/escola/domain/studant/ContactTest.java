@@ -1,5 +1,8 @@
 package dev.rvz.escola.domain.studant;
 
+import dev.rvz.escola.academic.domain.student.Contact;
+import dev.rvz.escola.academic.domain.student.Email;
+import dev.rvz.escola.academic.domain.student.Telephone;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
