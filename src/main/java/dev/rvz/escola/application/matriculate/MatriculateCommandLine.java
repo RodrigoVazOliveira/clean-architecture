@@ -1,5 +1,7 @@
 package dev.rvz.escola.application.matriculate;
 
+import dev.rvz.escola.domain.PublishEvents;
+import dev.rvz.escola.domain.studant.LogStudentMatriculated;
 import dev.rvz.escola.domain.studant.StudantRepository;
 import dev.rvz.escola.infra.studant.StudantRepositoryJDBC;
 
@@ -14,8 +16,13 @@ public class MatriculateCommandLine {
         String name = args[2];
         String email = args[3];
 
+        PublishEvents publishEvents = new PublishEvents();
+        publishEvents.add(new LogStudentMatriculated());
+
         MatriculateDTO matriculateDTO = new MatriculateDTO(CPF, email, name);
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("school-database");
+
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("com.rvz.escola.DATABASE");
+
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         StudantRepository studantRepository = new StudantRepositoryJDBC(entityManager.unwrap(Connection.class));
 

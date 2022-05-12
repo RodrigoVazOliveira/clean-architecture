@@ -2,7 +2,6 @@ package dev.rvz.escola.domain.studant;
 
 import java.util.List;
 
-
 public class Studant {
 
     private final CPF cpf;
