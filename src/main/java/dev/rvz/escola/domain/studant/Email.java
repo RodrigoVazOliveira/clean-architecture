@@ -11,7 +11,7 @@ public class Email {
     }
 
     private void validationAddressMail(String address) {
-        if (address == null || !address.matches("^(.+)@(.+)$")) {
+        if (address == null || !address.matches("^[A-Za-z0-9+_.-]+@(.+)$")) {
             throw new IllegalArgumentException("Address e-mail invalid!");
         }
     }

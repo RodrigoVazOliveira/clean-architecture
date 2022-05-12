@@ -1,5 +1,6 @@
 package dev.rvz.escola.application.matriculate;
 
+import dev.rvz.escola.MatriculateCommandLine;
 import dev.rvz.escola.domain.studant.CPF;
 import dev.rvz.escola.domain.studant.Studant;
 import dev.rvz.escola.domain.studant.StudantRepository;
@@ -10,7 +11,6 @@ import org.junit.jupiter.api.Test;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import java.sql.Connection;
 
 class MatriculateCommandLineTest {
 
@@ -26,7 +26,7 @@ class MatriculateCommandLineTest {
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("school-database");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
-        StudantRepository studantRepository = new StudantRepositoryJDBC(entityManager.unwrap(Connection.class));
+        StudantRepository studantRepository = new StudantRepositoryJDBC(entityManager);
 
         Studant studantExpect = studantRepository.findByCPF(new CPF("350.776.070-36"));
 
