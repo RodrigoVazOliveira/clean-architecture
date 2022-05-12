@@ -2,7 +2,7 @@ package dev.rvz.escola.game.infra.stamp;
 
 import dev.rvz.escola.game.domain.stamp.Stamp;
 import dev.rvz.escola.game.domain.stamp.StampRepository;
-import dev.rvz.escola.academic.domain.student.CPF;
+import dev.rvz.escola.shared.domain.CPF;
 
 import javax.persistence.EntityManager;
 

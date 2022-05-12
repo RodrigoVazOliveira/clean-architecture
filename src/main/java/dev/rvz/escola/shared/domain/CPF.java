@@ -1,4 +1,4 @@
-package dev.rvz.escola.academic.domain.student;
+package dev.rvz.escola.shared.domain;
 
 public class CPF {
 

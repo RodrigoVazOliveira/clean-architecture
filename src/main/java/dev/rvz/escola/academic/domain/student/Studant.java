@@ -1,5 +1,7 @@
 package dev.rvz.escola.academic.domain.student;
 
+import dev.rvz.escola.shared.domain.CPF;
+
 import java.util.List;
 
 public class Studant {

@@ -1,10 +1,10 @@
 package dev.rvz.escola.application.matriculate;
 
 import dev.rvz.escola.academic.MatriculateCommandLine;
-import dev.rvz.escola.academic.domain.student.CPF;
 import dev.rvz.escola.academic.domain.student.Studant;
 import dev.rvz.escola.academic.domain.student.StudantRepository;
 import dev.rvz.escola.academic.infra.studant.StudantRepositoryJDBC;
+import dev.rvz.escola.shared.domain.CPF;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

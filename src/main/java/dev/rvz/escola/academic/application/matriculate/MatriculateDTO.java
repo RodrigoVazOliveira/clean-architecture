@@ -1,9 +1,9 @@
 package dev.rvz.escola.academic.application.matriculate;
 
-import dev.rvz.escola.academic.domain.student.CPF;
 import dev.rvz.escola.academic.domain.student.Contact;
 import dev.rvz.escola.academic.domain.student.Email;
 import dev.rvz.escola.academic.domain.student.Studant;
+import dev.rvz.escola.shared.domain.CPF;
 
 import java.util.ArrayList;
 

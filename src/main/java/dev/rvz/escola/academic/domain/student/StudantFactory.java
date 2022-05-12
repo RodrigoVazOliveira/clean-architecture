@@ -1,5 +1,7 @@
 package dev.rvz.escola.academic.domain.student;
 
+import dev.rvz.escola.shared.domain.CPF;
+
 import java.util.ArrayList;
 
 public class StudantFactory {
@@ -7,7 +9,7 @@ public class StudantFactory {
     private Studant studant;
 
     public StudantFactory createStudanteWithNameAndCPFAndEmail(String name, String CPF, String addressEmail, String password) {
-        CPF cpf = new CPF(CPF);
+        dev.rvz.escola.shared.domain.CPF cpf = new CPF(CPF);
         Email email = new Email(addressEmail);
         Contact contact = new Contact(email, new ArrayList<>());
 

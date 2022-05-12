@@ -1,6 +1,6 @@
 package dev.rvz.escola.game.domain.stamp;
 
-import dev.rvz.escola.academic.domain.student.CPF;
+import dev.rvz.escola.shared.domain.CPF;
 
 public class Stamp {
 

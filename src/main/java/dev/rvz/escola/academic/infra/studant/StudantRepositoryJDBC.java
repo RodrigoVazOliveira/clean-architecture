@@ -1,8 +1,8 @@
 package dev.rvz.escola.academic.infra.studant;
 
-import dev.rvz.escola.academic.domain.student.CPF;
 import dev.rvz.escola.academic.domain.student.Studant;
 import dev.rvz.escola.academic.domain.student.StudantRepository;
+import dev.rvz.escola.shared.domain.CPF;
 
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
